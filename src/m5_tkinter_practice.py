@@ -105,10 +105,11 @@ def print_hello_condition(entry_box):
 
 
 def print_n_times(entry_box_0, entry_box_1):
-    n = int(entry_box_0.get())
+    n = entry_box_0.get()
     text = entry_box_1.get()
-    for _ in range(n):
-        print(text)
+    if n.isdigit():
+        for _ in range(int(n)):
+            print(text)
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
