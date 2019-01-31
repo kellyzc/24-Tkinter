@@ -110,6 +110,8 @@ def print_n_times(entry_box_0, entry_box_1):
     if n.isdigit():
         for _ in range(int(n)):
             print(text)
+    else:
+        print('Bad Input')
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
